@@ -72,12 +72,22 @@
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
   outline: none;
 }
-.textfield label {
-  color: #f0ffffde;
-  margin-bottom: 10px;
+.textfield input:focus {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.textfield input:hover {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+  transition: 0.5s;
 }
 .textfield input::placeholder {
   color: #f0ffff94;
+}
+.textfield label {
+  color: #f0ffffde;
+  margin-bottom: 10px;
 }
 .button-login {
   width: 100%;
@@ -93,6 +103,11 @@
   background-color: #00eeff;
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #00eeff52;
+}
+.button-login:hover {
+  letter-spacing: 10px;
+  box-shadow: 0px 10px 40px -12px #00eeff;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 980px) {
   .card-login {
